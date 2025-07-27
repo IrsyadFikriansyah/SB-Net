@@ -1,0 +1,70 @@
+Processing dataset: balancing/train-smote.csv
+--- Stage 1 with Random Forest (Gini) ---
+Training Time: 10985.61946 seconds
+Random Forest Depths curr -> Avg: 29.00, Max: 29, Min: 29
+Testing Time: 63.54251 seconds
+Accuracy: 0.9996
+Precision: 0.9963
+Recall: 0.9995
+F1 Score: 0.9979
+F2 Score: 0.9989
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.9996    0.9998   6148305
+           1     0.9926    0.9994    0.9960    293326
+
+    accuracy                         0.9996   6441631
+   macro avg     0.9963    0.9995    0.9979   6441631
+weighted avg     0.9996    0.9996    0.9996   6441631
+
+Confusion Matrix:
+[[6146119    2186]
+ [    187  293139]]
+
+------ Stage 2 with Random Forest (Gini) ------
+Training Time: 2737.19108 seconds
+Random Forest Depths (Stage 2) -> Avg: 28.68, Max: 29, Min: 25
+Testing Time: 1.42763 seconds
+Accuracy: 0.9998
+Precision: 0.9998
+Recall: 0.9998
+F1 Score: 0.9998
+F2 Score: 0.9998
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.9998    0.9999    265385
+           1     0.9983    0.9999    0.9991     29940
+
+    accuracy                         0.9998    295325
+   macro avg     0.9991    0.9999    0.9995    295325
+weighted avg     0.9998    0.9998    0.9998    295325
+
+Confusion Matrix:
+[[265334     51]
+ [     3  29937]]
+
+Combined Classification Report:
+Accuracy: 0.9996
+Precision: 0.9996
+Recall: 0.9996
+F1 Score: 0.9996
+F2 Score: 0.9996
+
+              precision    recall  f1-score   support
+
+           0     1.0000    0.9996    0.9998   6148305
+           1     0.9919    0.9993    0.9956    263382
+           2     0.9983    0.9998    0.9990     29944
+
+    accuracy                         0.9996   6441631
+   macro avg     0.9967    0.9996    0.9981   6441631
+weighted avg     0.9996    0.9996    0.9996   6441631
+
+Confusion Matrix:
+[[6146119    2136      50]
+ [    183  263198       1]
+ [      4       3   29937]]
+
+All loops completed.
