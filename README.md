@@ -1,5 +1,7 @@
 # SB-Net
 
+> **Note:** This GitHub repository does not contain the final version of the SB-Net software. The software is now comprehensively described in a SoftwareX journal article titled *"SB-Net: Software for classifying botnet attacks to prevent comprehensive infection"* [DOI: 10.1016/j.softx.2026.102672](https://doi.org/10.1016/j.softx.2026.102672). The article provides a detailed description of the software, its real-world use cases, the deployed capsule, and the link to the latest version of the GitHub repository.
+
 ## 🛠 Installation & Software Usage Guide  
 
 ### Prerequisites  
